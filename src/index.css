@@ -1,8 +1,176 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(240, 239, 239);
+}
+body{
+  overflow-y: scroll;
+}
+.pointer{
+  cursor: pointer;
+}
+.round-corner{
+  border-radius: 8px;
+}
+.wrapper{
+  max-width: 30rem;
+  margin:4rem auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+.bg-dark{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+  font-weight: 200;
+}
+.total{
+  display: flex;
+  align-items: center;
+}
+.total strong{
+  font-size: 1.4rem;
+}
+.total img{
+  cursor: pointer;
+ max-width: 40%;
+  height: 40%;
+  display: block;
+  margin-left: 6px;
+  margin-bottom: 4px;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.mb-4{
+  margin-bottom: 2rem;
+}
+.cancel-button{
+border: none;
+outline:none;
+background-color: #ddd;
+padding:.6rem 1rem;
+border-radius: 4px;
+
+}
+.add-transaction{
+  display: flex;
+  justify-content: end;
+}
+.Transaction-button{
+  border: none;
+  outline:none;
+  border-radius: 4px;
+  background-color: rgb(248, 210, 41);
+padding:.6rem 1rem;
+font-weight: 600;
+}
+.Transaction-button img{
+  max-width: 11px;
+  margin-right: 6px;
+}
+.form-enter{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2) ;
+
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.input-container label{
+  font-size:.8rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+.input-container input, .input-container select, .input-container textarea{
+  padding: 0.6em;
+  border:1px solid rgb(197, 197, 197);
+  outline: none;
+  border-radius: 4px;
+}
+.save-transaction{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.2em;
+}
+.result-container{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.result-container .daily{
+  color: rgb(124, 124, 124);
+  font-weight: 600;
+  font-size: .8em;
+  margin-bottom: .8em;
+}
+.result{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  margin-bottom: 1em;
+}
+.description{
+  display: flex;
+  align-items: center;
+}
+.order{
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.divider{
+  width: 1px;
+  height: 1.4rem;
+  background-color: #ddd;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.name-description{
+  display: flex;
+  flex-direction: column;
+}
+.name-description .category{
+  font-weight: 600;
+  font-size: .8em;
+}
+.name-description .name{
+  color: rgb(156, 156, 156);
+  text-transform: capitalize;
+  font-size: .6em;
+}
+
+.saving .green{
+  font-weight: 600;
+  font-size: 0.8em;
+  color: rgb(0, 177, 0);
+}
+.caption-footer{
+  position: relative;
+  margin-top: 4rem;
+  bottom: 1rem;
+  left: calc(50% - 9rem);
+  color: rgb(160, 160, 160);
+  /* clear: both; */
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
