@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ShowBalance() {
     return (
+        <>
+        <Link to='/' className='backButton'><img src="./arrow.png" alt="" /> back</Link>
         <div className="bg-dark round-corner">
             <div className="d-flex mb-4">
                 <div className="col text-wallet">Wallet Balance</div>
@@ -14,5 +17,6 @@ export default function ShowBalance() {
                 <div className="col unit">USD</div>
             </div>
         </div>
+        </>
     )
 }
