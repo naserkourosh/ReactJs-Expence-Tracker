@@ -8,7 +8,7 @@ export default function ShowBalance() {
         <div className="bg-dark round-corner">
             <div className="d-flex mb-4">
                 <div className="col text-wallet">Wallet Balance</div>
-                <div className="col date">April 12 ,2021</div>
+                <div className="col date">{new Date().toLocaleString('en-us', { month: 'long' })} {new Date().getDate()} ,{new Date().getFullYear()}</div>
             </div>
             <div className="d-flex">
                 <div className="col total">
